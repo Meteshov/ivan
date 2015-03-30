@@ -1,0 +1,1 @@
+<?php var_dump(AuthComponent::user('id'));?>

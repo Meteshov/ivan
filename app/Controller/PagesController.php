@@ -35,6 +35,9 @@ class PagesController extends AppController {
  *
  * @var array
  */
+    public $components = array();
+
+    public $helpers = array('Html','Form');
 	public $uses = array();
 
 /**
@@ -45,6 +48,7 @@ class PagesController extends AppController {
  *	or MissingViewException in debug mode.
  */
 	public function display() {
+        $this->layout = 'home';
 		$path = func_get_args();
 
 		$count = count($path);
