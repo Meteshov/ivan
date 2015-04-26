@@ -51,13 +51,24 @@ class UsersController extends AppController{
             return $this->redirect(array('controller'=>'users','action'=>'dashboard'));
         }
         else{
-            var_dump($this->Auth->authError);
+
         }
     }
     public function logout(){
+        $this->autoRender = false;
         $this->Auth->logout();
     }
     public function dashboard(){
+        $this->layout = 'home_logged';
+        $this->set('avatar','123');
+    }
+    public function mentions(){
+        $this->layout = 'home_logged';
+    }
+    public function books(){
+        $this->layout = 'home_logged';
+    }
+    public function bookmarks(){
         $this->layout = 'home_logged';
     }
 }

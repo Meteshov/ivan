@@ -19,7 +19,7 @@ class User extends AppModel{
         'password' => array(
             'rule-1' => array(
                 'rule' => array('minLength',6),
-                'message' => 'Минимальная длина паролей - 8 символов'
+                'message' => 'Минимальная длина паролей - 6 символов'
             ),
             'rule-2' => array(
                 'rule'=>array('confirmPass'),

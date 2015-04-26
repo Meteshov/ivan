@@ -27,8 +27,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     </title>
     <?php
     echo $this->Html->meta('icon');
-    echo $this->Html->css('bootstrap.min');
-    echo $this->Html->script('jquery-1.11.2.min');
+    echo $this->Html->css(array('bootstrap.min','additional'));
+    echo $this->Html->script(array('jquery-1.11.2.min','scripts'));
     echo $this->fetch('meta');
     echo $this->fetch('css');
     echo $this->fetch('script');
@@ -36,16 +36,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 <body>
 <div class="container">
-    <div class="row header">
-        <h1></h1>
+    <div class="container-fluid">
+        <?php echo $this->element('user_head');?>
+        <?php echo $this->element('user_nav');?>
     </div>
-    <div class="col-md-12">
-
-        <?php echo $this->Session->flash(); ?>
-
+    <div class="container-fluid">
         <?php echo $this->fetch('content'); ?>
     </div>
-    <div class="row footer">
+    <div class="container-fluid footer">
 
     </div>
 </div>

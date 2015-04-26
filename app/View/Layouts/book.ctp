@@ -28,7 +28,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     <?php
     echo $this->Html->meta('icon');
     echo $this->Html->css(array('bootstrap.min','additional'));
-    echo $this->Html->script(array('jquery-1.11.2.min','scripts'));
+    echo $this->Html->script(array('jquery-1.11.2.min','book','tinymce.min'));
     echo $this->fetch('meta');
     echo $this->fetch('css');
     echo $this->fetch('script');
@@ -36,14 +36,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 <body>
 <div class="container">
-    <div class="col-md-12 header">
-        <div class="row-fluid">Picture for header</div>
-    </div>
     <div class="col-md-12">
-        <?php echo $this->fetch('content'); ?>
-    </div>
-    <div class="row footer">
-
+        <div class="col-md-2 bp-sidebar">
+            <?php echo $this->element('book_sidebar');?>
+        </div>
+        <div class="col-md-10 bp-content">
+            <?php
+            if(($this->params['controller'] == 'books') && ($this->params['action'] == 'edit'))
+                echo $this->element('editor');
+            echo $this->fetch('content');
+            ?>
+        </div>
     </div>
 </div>
 </body>
