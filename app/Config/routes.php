@@ -32,7 +32,8 @@
 
     Router::connect('/dashboard', array('controller' => 'users', 'action' => 'dashboard'));
     Router::connect('/dashboard/:action', array('controller' => 'users'));
-    Router::connect('/dashboard/books/add', array('controller' => 'books','action'=>'add'));
+    Router::connect('/dashboard/books/:action/*', array('controller' => 'books'/*,'action'=>'add'*/));
+    //Router::connect('/dashboard/books/edit/*', array('controller' => 'books','action'=>'edit'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on

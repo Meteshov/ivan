@@ -67,6 +67,8 @@ class UsersController extends AppController{
     }
     public function books(){
         $this->layout = 'home_logged';
+        $this->loadModel('Book');
+        $this->set('books',$this->Book->find('all',array('conditions'=>array('author_id'=>$this->Auth->user('id')))));
     }
     public function bookmarks(){
         $this->layout = 'home_logged';

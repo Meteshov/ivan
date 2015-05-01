@@ -59,3 +59,9 @@ a.custom-bform-link-5{
     margin-bottom: 3px;
     width: 4.8%;
 }
+img.book-cover{
+    width: 60px;
+}
+table.books-list > tbody > tr > td{
+    vertical-align: middle;
+}

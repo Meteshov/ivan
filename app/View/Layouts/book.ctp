@@ -37,16 +37,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 <div class="container">
     <div class="col-md-12">
-        <div class="col-md-2 bp-sidebar">
-            <?php echo $this->element('book_sidebar');?>
-        </div>
-        <div class="col-md-10 bp-content">
-            <?php
-            if(($this->params['controller'] == 'books') && ($this->params['action'] == 'edit'))
-                echo $this->element('editor');
-            echo $this->fetch('content');
-            ?>
-        </div>
+       <?php echo $this->fetch('content');?>
     </div>
 </div>
 </body>
