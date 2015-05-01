@@ -6,7 +6,10 @@
     <a class="btn btn-success center-block" href="/dashboard/edit">Профиль</a>
 </div>
 <div class="row-fluid">
+    <div class="row-fluid">
+        <button class="btn btn-default">new page</button>
+    </div>
     <?php foreach($pages as $page){ ?>
-        <div class="row-fluid">Page</div>
+        <div class="row-fluid">Page num</div>
     <?php }?>
 </div>

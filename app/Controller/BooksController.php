@@ -40,4 +40,15 @@ class BooksController extends AppController{
             $this->set('show_pages',true);
         }
     }
+    public function view($id,$page_num){
+        $this->loadModel('Book');
+        $book = $this->Book->findById($id);
+        if(!empty($book)){
+            $pages = $this->sortByPageNum($book['Part']);
+            $this->set('book',$book);
+            $this->set('page',$pages[$page_num]);
+            $this->set('pages',$book['Part']);
+            $this->set('show_pages',true);
+        }
+    }
 }
