@@ -1,4 +1,10 @@
+<!--<div class="col-md-10">
+    <img src="/img/header.jpg" />
+</div>-->
 <div class="main-col col-md-10">
+    <!--<div class="header-img-wrap">
+        <img src="/img/header.jpg" class="header-img"/>
+    </div>-->
     <div class="search-form-wrap row-fluid">
             <form class="form-horizontal">
                 <div class="form-group  has-feedback">
@@ -16,8 +22,6 @@
     </div>
     <div class="preview-wrap row"></div>
 </div>
-
-
 <div class="sidebar col-md-2">
     <div class="login-wrap row">
         <div class="row register" style="display: none">

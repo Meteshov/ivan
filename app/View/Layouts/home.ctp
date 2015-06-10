@@ -37,7 +37,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 <div class="container">
     <div class="col-md-12 header">
-        <div class="row-fluid">Picture for header</div>
+        <div class="row">
+            <!--<img src="/img/header.jpg" />-->
+        </div>
     </div>
     <div class="col-md-12">
         <?php echo $this->fetch('content'); ?>

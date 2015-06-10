@@ -73,4 +73,8 @@ class UsersController extends AppController{
     public function bookmarks(){
         $this->layout = 'home_logged';
     }
+    public function edit(){
+        $this->layout = 'home_logged';
+        $this->Auth->user('id');
+    }
 }

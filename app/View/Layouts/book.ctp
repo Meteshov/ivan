@@ -27,8 +27,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     </title>
     <?php
     echo $this->Html->meta('icon');
-    echo $this->Html->css(array('bootstrap.min','additional'));
-    echo $this->Html->script(array('jquery-1.11.2.min','book','tinymce.min'));
+    echo $this->Html->css(array('bootstrap.min','additional','owl.carousel'));
+    echo $this->Html->script(array('jquery-1.11.2.min','tinymce.min','owl.carousel','dropzone','book'));
     echo $this->fetch('meta');
     echo $this->fetch('css');
     echo $this->fetch('script');
