@@ -10,7 +10,9 @@
     </div>
     <div class="col-md-6 info-wrap">
         <div class="user-info">
-            <p>blablablablabal</p>
+            <p><!--<span>Имя:</span> -->Артем</p>
+            <p><!--<span>Фамилия:</span> -->Метешов</p>
+            <p><span class="text-muted">Email:</span> artemko777@list.ru</p>
         </div>
     </div>
     <div class="col-md-4 add-book-wrap">

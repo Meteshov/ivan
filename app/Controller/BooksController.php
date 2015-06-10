@@ -9,6 +9,7 @@ class BooksController extends AppController{
     public function beforeFilter(){
         $this->layout = 'book';
         $this->Auth->deny('*');
+        $this->Auth->allow(array('savePage','attachFile'));
     }
 
     public function add(){
@@ -50,5 +51,35 @@ class BooksController extends AppController{
             $this->set('pages',$book['Part']);
             $this->set('show_pages',true);
         }
+    }
+    public function savePage(){
+        $this->autoRender = false;
+        $book = $this->request->data['b_id'];
+        $page = $this->request->data['num'];
+        $content = $this->request->data['content'];
+        $this->loadModel('Part');
+        $page = $this->Part->find('first',array(
+                'conditions'=>array(
+                    'book_id' => $book,
+                    'number' => $page
+                ),
+                'fields'=>'id'
+            )
+        );
+        $this->Part->clear();
+        $this->Part->id = $page['Part']['id'];
+        $data = array('content'=>$content);
+        if($this->Part->save($data)){
+            $re = 'done';
+        }
+        else{
+            $re = $this->Part->validationErrors;
+        }
+        var_dump($re);
+        //$this->response->body($re);
+    }
+    public function attachFile(){
+        $this->autoRender = false;
+        echo "123";
     }
 }

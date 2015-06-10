@@ -1,3 +1,16 @@
+body{
+    background: url("../img/background1.jpg") no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+div.header-img-wrap{
+    margin: 0;
+}
+.header-img{
+    width: 835px;
+}
 .right-float{
     float:right;
 }
@@ -12,6 +25,13 @@
 }
 .user-picture{
     width: 150px;
+    margin-top: 8px;
+}
+.user-info{
+    margin-top: 35px;
+}
+.user-info p{
+    font-size: 20px;
 }
 .margin-bot-10{
     margin-bottom: 10px;
@@ -106,8 +126,37 @@ html ul.attached-file-list{
 .attached-file-list > li >p{
     text-align: center;
 }
-button.save-page{
-    width: 100px;
+.edit-page-btn{
     margin-top: 5px;
     margin-right: 7px;
+}
+.margin-top-10{
+    margin-top: 10px;
+}
+.offset-30{
+    margin-left: 37.2%;
+}
+div.fixed{
+    position: fixed;
+    bottom: 6%;
+    left:15%;
+}
+/*DROPZONE CSS*/
+.add-file{
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    border : 3px solid #d9edf7;
+    text-align: center;
+    line-height: 145px;
+}
+.add-file button{
+    width: 60px;
+    height: 60px;
+}
+.dz-image img{
+    height: 100px;
+}
+.invisible{
+    display:none;
 }

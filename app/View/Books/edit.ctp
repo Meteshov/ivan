@@ -1,58 +1,16 @@
-<div class="col-md-2 bp-sidebar">
+<div class="col-md-12 bp-head">
     <?php
-        echo $this->element('book_sidebar_edit');?>
+    echo $this->element('book_sidebar_edit');?>
     <?php //echo $this->element('book_sidebar');?>
-    <div class="row-fluid">
-
-    </div>
 </div>
-<div class="col-md-8 bp-content">
-    <div class="row-fluid sub-head">
-        <img src="/img/header_sample.png" class="">
-    </div>
+<div class="col-md-8 col-md-offset-2 bp-content margin-top-10">
     <?php echo $this->element('tinyscript');?>
     <textarea id="tinyContainer"></textarea>
-    <button class="btn btn-lg btn-success save-page right-float" title="Сохранить">
-        <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>
-    </button>
+    <a href="#" class="btn btn-default btn-success edit-page-btn left-float" title="Сохранить">Отмена</a>
+    <a href="#" class="btn btn-default btn-success edit-page-btn save-page right-float" title="Сохранить">Сохранить</a>
+    <input type="hidden" class="book_id" value="<?php echo $book['Book']['id'];?>">
+    <input type="hidden" class="page_num" value="<?php echo $page['number'];?>">
 </div>
-<div class="col-md-2 files-wrapper">
-    <ul class="attached-file-list list-group">
-        <li class="attached-file">
-            <img src="/files/avatars/avatar_sample.png" class="img-rounded attached-image">
-            <p>Picture 1</p>
-        </li>
-        <li class="attached-file">
-            <img src="/files/avatars/avatar_sample.png" class="img-rounded attached-image">
-            <p>Picture 1</p>
-        </li>
-        <li class="attached-file">
-            <img src="/files/avatars/avatar_sample.png" class="img-rounded attached-image">
-            <p>Picture 1</p>
-        </li>
-        <li class="attached-file">
-            <img src="/files/avatars/avatar_sample.png" class="img-rounded attached-image">
-            <p>Picture 1</p>
-        </li>
-        <li class="attached-file">
-            <img src="/files/avatars/avatar_sample.png" class="img-rounded attached-image">
-            <p>Picture 1</p>
-        </li>
-        <li class="attached-file">
-            <img src="/files/avatars/avatar_sample.png" class="img-rounded attached-image">
-            <p>Picture 1</p>
-        </li>
-        <li class="attached-file">
-            <img src="/files/avatars/avatar_sample.png" class="img-rounded attached-image">
-            <p>Picture 1</p>
-        </li>
-        <li class="attached-file">
-            <img src="/files/avatars/avatar_sample.png" class="img-rounded attached-image">
-            <p>Picture 1</p>
-        </li>
-        <li class="attached-file">
-            <img src="/files/avatars/avatar_sample.png" class="img-rounded attached-image">
-            <p>Picture 1</p>
-        </li>
-    </ul>
+<div class="invisible">
+    <div id="drop"></div>
 </div>

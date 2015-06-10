@@ -1,4 +1,3 @@
-<?php print_r($books);?>
 <table class="table table-hover books-list">
 <?php if(!empty($books)){?>
     <thead>
@@ -15,7 +14,7 @@
             <td class="book-title"><?php echo $book['Book']['title'];?></td>
             <td class="book-description"><?php echo $book['Book']['description'];?></td>
             <td class="book-actions">
-                <a href="/dashboard/books/view/<?php echo $book['Book']['id'];?>" class="btn btn-default" title="Читать">
+                <a href="/dashboard/books/view/<?php echo $book['Book']['id'];?>/1" class="btn btn-default" title="Читать">
                     <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                 </a>
                 <a href="/dashboard/books/edit/<?php echo $book['Book']['id'];?>/1" class="btn btn-default" title="Редактировать">

@@ -1,15 +1,20 @@
-<div class="row-fluid margin-bot-10 avatar-container">
+<?php $edit = ($this->params['action']=="edit") ? true : false;?>
+<div class="col-md-2">
     <img src="/files/avatars/avatar_sample.png" class="img-rounded user-picture">
-    <span class="center-block shadow-text">Редактировать фото</span>
 </div>
-<div class="row-fluid">
-    <a class="btn btn-success center-block" href="/dashboard/edit">Профиль</a>
-</div>
-<div class="row-fluid">
-    <div class="row-fluid">
-        <button class="btn btn-default">new page</button>
+<div class="col-md-8">
+    <h3>Прикрепленные файлы <?php if($edit):?><a class="btn btn-success new-attach" href="#">Добавить</a><?php endif;?></h3>
+    <div class="row-fluid attached-files">
+        <div class="item"><img src="/files/avatars/avatar_sample.png" class="img-rounded" height="85px"></div>
+        <div class="item"><img src="/files/avatars/avatar_sample.png" class="img-rounded" height="85px"></div>
+        <div class="item"><img src="/files/avatars/avatar_sample.png" class="img-rounded" height="85px"></div>
+        <div class="item"><img src="/files/avatars/avatar_sample.png" class="img-rounded" height="85px"></div>
+        <div class="item"><img src="/files/avatars/avatar_sample.png" class="img-rounded" height="85px"></div>
+        <div class="item"><img src="/files/avatars/avatar_sample.png" class="img-rounded" height="85px"></div>
+        <!--<a class="btn btn-success center-block" href="/dashboard/edit">Профиль</a>-->
     </div>
-    <?php foreach($pages as $page){ ?>
-        <div class="row-fluid">Page num</div>
-    <?php }?>
+    <div class="controls">
+            <span class="glyphicon glyphicon-menu-left left-arrow"></span>
+            <span class="glyphicon glyphicon-menu-right right-arrow"></span>
+    </div>
 </div>
