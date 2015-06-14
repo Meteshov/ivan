@@ -18,5 +18,4 @@
     <div class="col-md-4 add-book-wrap">
         <a href="/dashboard/books/add">Добавить книгу</a>
     </div>
-
 </div>

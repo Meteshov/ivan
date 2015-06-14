@@ -30,7 +30,6 @@ class UsersController extends AppController{
             )
         )
     ));
-    public $helpers = array();
 
     public function register(){
         $this->autoRender = false;
@@ -60,7 +59,6 @@ class UsersController extends AppController{
     }
     public function dashboard(){
         $this->layout = 'home_logged';
-        $this->set('avatar','123');
     }
     public function mentions(){
         $this->layout = 'home_logged';

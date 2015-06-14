@@ -19,6 +19,8 @@ $(document).on('mouseleave','.avatar-container',function(){
     $('.shadow-text').css('display','none');
 });
 $(document).ready(function(){
-
+    $('.nav-list-item').click(function(){
+        window.location = $(this).find('a').attr('href');
+    });
 });
 

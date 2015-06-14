@@ -160,3 +160,50 @@ div.fixed{
 .invisible{
     display:none;
 }
+/*USER LOGGED HEADER*/
+.header{
+    background: white;
+}
+.header .avatar-wrap{
+    margin-bottom: 8px;
+}
+/*main content wrap*/
+.main-content{
+    background: #ffff00;
+}
+/*USER NAVIGATION*/
+div.user-nav{
+    background: red;
+    padding: 0;
+}
+ul.navigation{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navigation li{
+    display: inline-block;
+    width: 13.5%;
+    background: yellowgreen;
+    text-align: center;
+    line-height: 45px;
+    border-right: solid #000000 1px;
+}
+.navigation li:first-child{
+    width: 2.8%;
+}
+.navigation li.active{
+    background: blue;
+}
+.navigation li:hover{
+    cursor:pointer;
+    background: #ffff00;
+}
+.navigation li:last-child{
+    float: right;
+    border: none;
+}
+.navigation li a{
+    text-decoration: none;
+    outline: none;
+}

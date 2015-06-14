@@ -40,7 +40,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         <?php echo $this->element('user_head');?>
         <?php echo $this->element('user_nav');?>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid main-content">
         <?php echo $this->fetch('content'); ?>
     </div>
     <div class="container-fluid footer">
