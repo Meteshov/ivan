@@ -18,7 +18,7 @@
         </li>
     </ul>
 </div>-->
-<div class="col-md-12 user-nav margin-bot-50">
+<div class="col-md-12 user-nav">
     <ul class="navigation"><!--
         --><li class="first-item">
             <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
