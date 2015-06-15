@@ -17,36 +17,19 @@ $(document).ready(function(){
     $(".left-arrow").click(function(){
         owl.trigger('owl.prev');
     });
-    var drop = new Dropzone("div#drop",{
-        url:'/books/attachFile'
-    });
-    drop.on('complete',function(data){
-        console.log(data);
-    })
+    if($('#BookFiles').lenght > 0){
+        $('#BookFiles').change(function(){
+            var fileCount = this.files.length;
+        });
+    }
 });
 $(document).on('click','.new-attach',function(e){
-    e.preventDefault();
-    $('#drop').trigger('click');
-})
-$(window).on('resize',function(){
-    if($('.attached-file-list').length > 0){
-        if($('.attached-file-list li').length > 0){
-            $('.attached-file-list').css('max-height',($(window).height() - ($(window).height() / 5)));
-        }
-    }
+    $('#BookFiles').trigger('click');
+    return false;
 });
 $(document).on('click','.save-page',function(e){
     e.preventDefault();
-    $.ajax({
-        url:'/books/savePage',
-        type:'POST',
-        data:{
-            b_id: $('.book_id').val(),
-            num: $('.page_num').val(),
-            content: tinyMCE.activeEditor.getContent({format : 'raw'})
-        },
-        success:function(data){
-            alert(data);
-        }
-    });
+    /*var form = $('#BookSavePageForm');
+    form.find('#BookContent').val(tinyMCE.activeEditor.getContent({format : 'raw'}));
+    form.submit();*/
 });

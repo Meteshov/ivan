@@ -53,10 +53,10 @@ class BooksController extends AppController{
         }
     }
     public function savePage(){
-        $this->autoRender = false;
-        $book = $this->request->data['b_id'];
-        $page = $this->request->data['num'];
-        $content = $this->request->data['content'];
+        $book = $this->request->data['Book']['book'];
+        $page = $this->request->data['Book']['page'];
+        $content = $this->request->data['Book']['content'];
+        $files = $this->request->data['Book']['files'];
         $this->loadModel('Part');
         $page = $this->Part->find('first',array(
                 'conditions'=>array(
@@ -75,8 +75,10 @@ class BooksController extends AppController{
         else{
             $re = $this->Part->validationErrors;
         }
-        var_dump($re);
-        //$this->response->body($re);
+        App::import('Controller','Files');
+        $file = new FilesController();
+        $file->uploadFiles($files,$page['Part']['id']);
+
     }
     public function attachFile(){
         $this->autoRender = false;

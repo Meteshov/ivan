@@ -1,9 +1,12 @@
-body{
+/*body{
     background: url("../img/background1.jpg") no-repeat;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+    -moz-background-size: 100%; *//* Firefox 3.6+ *//*
+    -webkit-background-size: 100%; *//* Safari 3.1+ и Chrome 4.0+ *//*
+    -o-background-size: 100%; *//* Opera 9.6+ *//*
+    background-size: 100%; *//* Современные браузеры *//*
+}*/
+body{
+    background: #EEEEEE;
 }
 div.header-img-wrap{
     margin: 0;
@@ -160,6 +163,67 @@ div.fixed{
 .invisible{
     display:none;
 }
+/*USER UNLOGGED HEADER*/
+.header-main{
+    margin: 0 auto;
+}
+.header-main-image img{
+    width:100%;
+}
+.header-main-nav{
+    background: white;
+    margin-bottom: 2%;
+}
+.header-main-nav{
+    text-align: center;
+}
+.header-main-nav ul{
+    margin-bottom:10px;
+    margin-left: 6%;
+}
+.header-main-nav ul li{
+    display: inline-block;
+    margin:0;
+    font-size: 25px;
+    width: 17%;
+    line-height: 70px;
+    /*text-transform: uppercase;*/
+}
+.header-main-nav ul li.item-separator{
+    width: 2%;
+    color:rgba(0,0,0, .5);
+    font-size: 20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.header-main-nav ul li.item-large{
+    width: 25%;
+}
+.header-main-nav ul li a{
+    text-decoration: none;
+    outline: none;
+    color:rgba(0,0,0, .5);
+    font-weight: 400;
+}
+.header-main-left{
+    display: inline-block;
+    width: 74%;
+}
+.header-main-right{
+    display: inline-block;
+    width: 25%;
+}
+.header-main form div.form-group{
+    margin: 0;
+    padding: 0;
+    width:61%;
+    margin-left: -1%;
+}
+.header-main form div.form-group input{
+    width:103.5%
+}
+.header-main form button{
+    margin-left:4%;
+}
 /*USER LOGGED HEADER*/
 .header{
     background: white;
@@ -169,11 +233,11 @@ div.fixed{
 }
 /*main content wrap*/
 .main-content{
-    background: #ffff00;
+    /*background: #ffff00;*/
 }
 /*USER NAVIGATION*/
 div.user-nav{
-    background: red;
+    background: white;
     padding: 0;
 }
 ul.navigation{
@@ -184,20 +248,24 @@ ul.navigation{
 .navigation li{
     display: inline-block;
     width: 13.5%;
-    background: yellowgreen;
     text-align: center;
     line-height: 45px;
-    border-right: solid #000000 1px;
 }
 .navigation li:first-child{
     width: 2.8%;
 }
-.navigation li.active{
-    background: blue;
+.navigation li.active,
+.navigation li.active a
+{
+    background: #5bc0de;
+    color: #ffffff;
 }
 .navigation li:hover{
     cursor:pointer;
-    background: #ffff00;
+    background: #5bc0de;
+}
+.navigation li:hover a{
+    color: #ffffff;
 }
 .navigation li:last-child{
     float: right;
@@ -206,4 +274,13 @@ ul.navigation{
 .navigation li a{
     text-decoration: none;
     outline: none;
+    color: rgba(0,0,0, .5);
+    font-weight:600;
+    font-size: 16px;
+}
+.navigation li a:hover{
+    color:#ffffff;
+}
+.navigation li.first-item{
+    color: rgba(0,0,0, .5);
 }

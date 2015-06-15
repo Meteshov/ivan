@@ -1,26 +1,17 @@
-<!--<div class="col-md-10">
-    <img src="/img/header.jpg" />
-</div>-->
 <div class="main-col col-md-10">
-    <!--<div class="header-img-wrap">
-        <img src="/img/header.jpg" class="header-img"/>
-    </div>-->
-    <div class="search-form-wrap row-fluid">
+    <!--<div class="search-form-wrap row-fluid">
             <form class="form-horizontal">
                 <div class="form-group  has-feedback">
                     <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
                     <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
                 </div>
             </form>
+    </div>-->
+    <div id="main-page-slider" class="owl-carousel owl-theme">
+        <div class="item"><img src="/img/main_page_slider/1.jpg" alt="The Last of us"></div>
+        <div class="item"><img src="/img/main_page_slider/2.jpg" alt="GTA V"></div>
+        <div class="item"><img src="/img/main_page_slider/3.jpg" alt="Mirror Edge"></div>
     </div>
-    <div class="nav-bar-wrap row-fluid">
-        <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-            <li role="presentation"><a href="#">Messages</a></li>
-        </ul>
-    </div>
-    <div class="preview-wrap row"></div>
 </div>
 <div class="sidebar col-md-2">
     <div class="login-wrap row">
