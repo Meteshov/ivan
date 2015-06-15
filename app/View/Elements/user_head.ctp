@@ -5,7 +5,7 @@
             <span class="center-block shadow-text">Редактировать фото</span>
         </div>
         <div class="row-fluid">
-            <a class="btn btn-success center-block" href="/dashboard/edit">Профиль</a>
+            <a class="btn btn-info center-block" href="/dashboard/edit">Профиль</a>
         </div>
     </div>
     <div class="col-md-6 info-wrap">
@@ -18,5 +18,4 @@
     <div class="col-md-4 add-book-wrap">
         <a href="/dashboard/books/add">Добавить книгу</a>
     </div>
-
 </div>

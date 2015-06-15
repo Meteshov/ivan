@@ -19,6 +19,16 @@ $(document).on('mouseleave','.avatar-container',function(){
     $('.shadow-text').css('display','none');
 });
 $(document).ready(function(){
-
+    $('.nav-list-item').click(function(){
+        window.location = $(this).find('a').attr('href');
+    });
+    if($('#main-page-slider').length > 0){
+        $('#main-page-slider').owlCarousel({
+            navigation : false, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true
+        });
+    }
 });
 
