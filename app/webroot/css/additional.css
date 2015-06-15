@@ -284,3 +284,23 @@ ul.navigation{
 .navigation li.first-item{
     color: rgba(0,0,0, .5);
 }
+/*DASHBOARD*/
+.dashboard-container,
+.dashboard-head{
+    background: #ffffff;
+}
+.dashboard-head{
+    margin-bottom: 2%;
+    margin-top:2%;
+    color:rgba(0,0,0,.5);
+}
+.dashboard-head h2{
+    margin-bottom: 20px;
+}
+.dashboard-container img{
+    border: 1px solid rgba(0,0,0,.4);
+}
+.dashboard-container .book-cover{
+    margin-top:2%;
+    margin-bottom: 2%;
+}
