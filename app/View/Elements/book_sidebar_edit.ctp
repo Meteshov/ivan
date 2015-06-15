@@ -3,7 +3,7 @@
     <img src="/files/avatars/avatar_sample.png" class="img-rounded user-picture">
 </div>
 <div class="col-md-8">
-    <h3>Прикрепленные файлы <?php if($edit):?><a class="btn btn-success new-attach" href="#">Добавить</a><?php endif;?></h3>
+    <h3>Прикрепленные файлы <?php if($edit):?><a class="btn btn-info new-attach" href="#">Добавить</a><?php endif;?></h3>
     <div class="row-fluid attached-files">
         <div class="item"><img src="/files/avatars/avatar_sample.png" class="img-rounded" height="85px"></div>
         <div class="item"><img src="/files/avatars/avatar_sample.png" class="img-rounded" height="85px"></div>

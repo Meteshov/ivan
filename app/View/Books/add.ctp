@@ -1,7 +1,7 @@
 <div class="col-md-2 bp-sidebar">
 <?php echo $this->element('book_sidebar');?>
 </div>
-<div class="col-md-10 bp-content">
+<div class="col-md-10 bp-content book-add-form">
     <h3>Заполните следующие данные</h3>
     <?php
         echo $this->Form->create('Book',array('action'=>'add'));
@@ -36,7 +36,7 @@
             'type'=>'hidden',
             'value'=>1
         ));
-        echo $this->Form->button('Добавить книгу',array('type'=>'submit','class'=>'btn btn-primary'));
+        echo $this->Form->button('Добавить книгу',array('type'=>'submit','class'=>'btn btn-info'));
         echo $this->Form->end();
     ?>
 </div>

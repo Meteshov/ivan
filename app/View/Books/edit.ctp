@@ -3,7 +3,16 @@
     echo $this->element('book_sidebar_edit');?>
     <?php //echo $this->element('book_sidebar');?>
 </div>
-<div class="col-md-8 col-md-offset-2 bp-content margin-top-10">
+<div class="col-md-12">
+<div class="col-md-2 book-navigation">
+    <!--<ul>
+        <li><span class="glyphicon glyphicon-menu-right"><a href="#">Личный кабинет</a></li>
+        <li><span class="glyphicon glyphicon-menu-right"><a href="#">Мои книги</a></li>
+        <li><span class="glyphicon glyphicon-menu-right"><a href="#">Мои закладки</a></li>
+        <li><span class="glyphicon glyphicon-menu-right"><a href="#">Оставить отзыв</a></li>
+    </ul>-->
+</div>
+<div class="col-md-8 bp-content margin-top-10">
     <?php echo $this->element('tinyscript');?>
     <textarea id="tinyContainer"></textarea>
     <a href="#" class="btn btn-default btn-success edit-page-btn left-float" title="Сохранить">Отмена</a>
@@ -18,4 +27,5 @@
     echo $this->Form->input('book', array('type' => 'hidden','value'=>$book['Book']['id']));
     echo $this->Form->input('content', array('type' => 'textarea','class'=>'pageContent'));
     echo $this->Form->end('sub');?>
+</div>
 </div>

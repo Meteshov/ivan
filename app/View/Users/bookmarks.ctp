@@ -1,13 +1,13 @@
 <table class="table table-hover books-list">
         <thead>
-        <tr class="info">
+        <tr>
             <td>Обложка</td>
             <td>Название</td>
             <td>Автор</td>
             <td>Действия</td>
         </tr>
         </thead>
-            <tr class="success">
+            <tr>
                 <td class="book-cover"><img src="/files/avatars/avatar_sample.png" class="img-rounded book-cover"></td>
                 <td class="book-title">Теория вероятностей</td>
                 <td class="book-author">Романов В.В</td>
@@ -20,7 +20,7 @@
                     </a>
                 </td>
             </tr>
-        <tr class="success">
+        <tr>
             <td class="book-cover"><img src="/files/avatars/avatar_sample.png" class="img-rounded book-cover"></td>
             <td class="book-title">Теория вероятностей</td>
             <td class="book-author">Романов В.В</td>
