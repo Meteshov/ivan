@@ -1,4 +1,4 @@
-<div class="col-md-12 header margin-bot-10">
+<div class="col-md-12 header">
     <div class="col-md-2 avatar-wrap">
         <div class="row-fluid margin-bot-10 avatar-container">
             <img src="/files/avatars/avatar_sample.png" class="img-rounded user-picture">
