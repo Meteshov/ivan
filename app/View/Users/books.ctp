@@ -1,7 +1,7 @@
 <table class="table table-hover books-list">
 <?php if(!empty($books)){?>
     <thead>
-        <tr class="info">
+        <tr class="books-list-header">
             <td>Обложка</td>
             <td>Название</td>
             <td>Короткое описание</td>
@@ -9,7 +9,7 @@
         </tr>
     </thead>
     <?php foreach($books as $book){?>
-        <tr class="success">
+        <tr class="book-list-body">
             <td class="book-cover"><img src="/files/avatars/avatar_sample.png" class="img-rounded book-cover"></td>
             <td class="book-title"><?php echo $book['Book']['title'];?></td>
             <td class="book-description"><?php echo $book['Book']['description'];?></td>
