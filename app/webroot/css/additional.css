@@ -103,6 +103,7 @@ table.books-list > tbody > tr:hover{
 table.books-list > thead > tr > td{
     text-align: center;
     border-left: 1px solid rgba(0,0,0, .05);
+    font-size:17px;
 }
 table.books-list > tbody > tr > td{
     text-align: center;
@@ -221,6 +222,9 @@ html ul.attached-file-list{
 /*USER LOGGED HEADER*/
 .header{
     background: white;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.39);
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.39);
 }
 .header .avatar-wrap{
     margin-bottom: 8px;
@@ -234,6 +238,9 @@ div.user-nav{
     margin-top: 2%;
     background: white;
     padding: 0;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.39);
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.39);
 }
 ul.navigation{
     list-style: none;
