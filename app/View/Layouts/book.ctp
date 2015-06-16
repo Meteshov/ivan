@@ -36,7 +36,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 <body>
 <div class="container">
-    <div class="col-md-12">
+    <div class="col-md-12 shadow book-container">
        <?php echo $this->fetch('content');?>
     </div>
 </div>

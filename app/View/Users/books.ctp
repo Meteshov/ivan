@@ -1,4 +1,4 @@
-<table class="table table-hover books-list">
+<table class="table table-hover books-list shadow">
 <?php if(!empty($books)){?>
     <thead>
         <tr class="books-list-header">

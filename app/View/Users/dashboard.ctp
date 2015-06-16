@@ -1,7 +1,7 @@
-<div class="col-md-12 dashboard-head">
+<div class="col-md-12 dashboard-head shadow">
     <h2>Возможно вас заинтересует</h2>
 </div>
-<div class="col-md-12 dashboard-container">
+<div class="col-md-12 dashboard-container shadow">
     <div class="book-cover col-md-6">
         <img src="/img/book-example.jpg">
     </div>

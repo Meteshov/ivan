@@ -35,7 +35,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     ?>
 </head>
 <body>
-<div class="header-main">
+<div class="header-main shadow">
     <div class="header-main-image">
         <img src="/img/header2.jpg"/>
     </div>
