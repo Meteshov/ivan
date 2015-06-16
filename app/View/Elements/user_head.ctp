@@ -15,7 +15,7 @@
             <p><span class="text-muted">Email:</span> jweishthebest@mail.uk</p>
         </div>
     </div>
-    <div class="col-md-4 add-book-wrap">
+    <!--<div class="col-md-4 add-book-wrap">
         <a href="/dashboard/books/add">Добавить книгу</a>
-    </div>
+    </div>-->
 </div>
