@@ -27,7 +27,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     </title>
     <?php
     echo $this->Html->meta('icon');
-    echo $this->Html->css(array('bootstrap.min','owl.carousel','owl.theme','additional'));
+    echo $this->Html->css(array('bootstrap.min','owl.carousel','owl.theme'));
+    echo $this->Html->css(array('additional'),'stylesheet',array('media'=>'screen'));
     echo $this->Html->script(array('jquery-1.11.2.min','owl.carousel','scripts'));
     echo $this->fetch('meta');
     echo $this->fetch('css');
@@ -40,7 +41,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         <img src="/img/header2.jpg"/>
     </div>
     <div class="header-main-nav container-fluid no-padding no margin">
-        <div class="header-main-left col-md-8">
+        <div class="header-main-left col-md-8 col-lg-8">
         <ul>
                <li><a href="#">Главная</a></li><!--
             --><li class="item-separator"><span class="glyphicon glyphicon-option-vertical"></span></li><!--
@@ -49,7 +50,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             --><li><a href="#">О нас</a></li>
         </ul>
         </div>
-        <div class="header-main-right col-md-2">
+        <div class="header-main-right col-md-2 col-lg-2">
             <form>
                 <div class="form-group">
                         <div class="input-group">
