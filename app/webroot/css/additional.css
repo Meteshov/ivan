@@ -59,6 +59,12 @@ div.header-img-wrap{
     cursor:pointer;
     display:none;
 }
+.no-padding{
+    padding: 0;
+}
+.no-margin{
+    margin:0;
+}
 .shadow{
     -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.39);
     -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.39);
@@ -183,7 +189,7 @@ html ul.attached-file-list{
 }
 .header-main-nav ul{
     margin-bottom:10px;
-    margin-left: 6%;
+    margin-left: 28%;
 }
 .header-main-nav ul li{
     display: inline-block;
@@ -208,25 +214,10 @@ html ul.attached-file-list{
     color:rgba(0,0,0, .5);
     font-weight: 400;
 }
-.header-main-left{
-    display: inline-block;
-    width: 74%;
-}
-.header-main-right{
-    display: inline-block;
-    width: 25%;
-}
-.header-main form div.form-group{
-    margin: 0;
-    padding: 0;
-    width:61%;
-    margin-left: -1%;
-}
-.header-main form div.form-group input{
-    width:103.5%
-}
-.header-main form button{
-    margin-left:4%;
+.header-main-right form{
+    width: 88.6%;
+    margin-left: 8%;
+    margin-top: 8%;
 }
 /*USER LOGGED HEADER*/
 .header{

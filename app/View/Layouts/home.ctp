@@ -39,8 +39,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     <div class="header-main-image">
         <img src="/img/header2.jpg"/>
     </div>
-    <div class="header-main-nav">
-        <div class="header-main-left">
+    <div class="header-main-nav container-fluid no-padding no margin">
+        <div class="header-main-left col-md-8">
         <ul>
                <li><a href="#">Главная</a></li><!--
             --><li class="item-separator"><span class="glyphicon glyphicon-option-vertical"></span></li><!--
@@ -49,13 +49,16 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             --><li><a href="#">О нас</a></li>
         </ul>
         </div>
-        <div class="header-main-right">
-            <form class="form-inline">
+        <div class="header-main-right col-md-2">
+            <form>
                 <div class="form-group">
-                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Ключевое слово...">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Поиск...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                            </span>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-default">Поиск</button>
             </form>
         </div>
     </div>
