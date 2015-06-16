@@ -31,3 +31,8 @@
     <?php }?>
 <?php }?>
 </table>
+<div class="col-lg-12 no-padding" style="margin-bottom: 10px">
+    <div class="col-md-2 add-book-wrap right-float">
+        <a href="/dashboard/books/add" class="btn btn-default btn-info" style="margin-left: 5%">Добавить книгу</a>
+    </div>
+</div>
