@@ -182,7 +182,7 @@ html ul.attached-file-list{
 }
 .header-main-nav ul{
     margin-bottom:10px;
-    margin-left: 28%;
+    margin-left: 21%;
 }
 .header-main-nav ul li{
     display: inline-block;
@@ -208,9 +208,9 @@ html ul.attached-file-list{
     font-weight: 400;
 }
 .header-main-right form{
-    width: 88.6%;
-    margin-left: 8%;
-    margin-top: 8%;
+    width: 51.2%;
+    margin-left: 15%;
+    margin-top: 5%;
 }
 /*USER LOGGED HEADER*/
 .header{
