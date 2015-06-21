@@ -10,10 +10,18 @@
     </div>
     <div class="col-md-6 info-wrap">
         <div class="user-info">
-            <p><!--<span>Имя:</span> -->Джереми</p>
-            <p><!--<span>Фамилия:</span> -->Кларксон</p>
-            <p><span class="text-muted">Email:</span> jweishthebest@mail.uk</p>
+            <p><!--<span>Имя:</span> --><?php echo $user['first_name'];?></p>
+            <p><!--<span>Фамилия:</span> --><?php echo $user['last_name'];?></p>
+            <p><span class="text-muted">Email:</span> <?php echo $user['email'];?></p>
         </div>
+    </div>
+    <div class="col-md-4 dashboard-search">
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control">
+                <button class="btn btn-info">Поиск</button>
+            </div>
+        </form>
     </div>
     <!--<div class="col-md-4 add-book-wrap">
         <a href="/dashboard/books/add">Добавить книгу</a>

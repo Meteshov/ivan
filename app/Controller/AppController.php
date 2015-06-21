@@ -38,4 +38,11 @@ class AppController extends Controller {
         }
         return $sorted;
     }
+    public function getLinks($files){
+        $links = array();
+        foreach($files as $file){
+            array_push($links,$file['File']['link']);
+        }
+        return $links;
+    }
 }

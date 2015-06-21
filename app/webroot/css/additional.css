@@ -299,6 +299,12 @@ ul.navigation{
     margin-top:2%;
     margin-bottom: 2%;
 }
+.dashboard-search{
+    text-align: right;
+}
+.dashboard-search form{
+    margin-top: 10px;
+}
 /*USER INFO EDIT*/
 .edit-user-info{
     background: #ffffff;
@@ -325,6 +331,24 @@ ul.navigation{
 .book-container{
     background: white;
 }
+.book-attach-container{
+    text-align: center;
+}
+img.book-attach-thumb{
+    width: 90px;
+    margin-bottom: 5px;
+    margin-left: 18px;
+}
+.remove-attach-btn:hover{
+    cursor: pointer;
+}
+input.page-num{
+    display: inline-block;
+    width: 5%;
+}
+.bp-nav{
+    background: #5bc0de;
+}
 /*BOOK NAVIGATION*/
 .book-navigation ul{
     list-style: none;
@@ -347,4 +371,15 @@ ul.navigation{
     text-decoration: none;
     outline:none;
     color: rgba(0,0,0,.9);
+}
+.home-btn{
+    margin-top: 10px;
+    width: 100%;
+}
+/*POPUPS*/
+#login-form{
+    background: #ffffff;
+}
+#login-form form button{
+    margin-bottom: 25px;
 }

@@ -32,24 +32,42 @@ class BooksController extends AppController{
     }
     public function edit($id,$page_num){
         $this->loadModel('Book');
+        $this->loadModel('Part');
+        $this->loadModel('File');
         $book = $this->Book->findById($id);
         if(!empty($book)){
             $pages = $this->sortByPageNum($book['Part']);
+            $files = $this->File->find('all',array(
+                'conditions'=>array(
+                    'page_id'=>$pages[$page_num]['id']
+                )
+            ));
+            $links = $this->getLinks($files);
             $this->set('book',$book);
             $this->set('page',$pages[$page_num]);
             $this->set('pages',$book['Part']);
             $this->set('show_pages',true);
+            $this->set('pictures',$links);
         }
     }
     public function view($id,$page_num){
         $this->loadModel('Book');
+        $this->loadModel('Part');
+        $this->loadModel('File');
         $book = $this->Book->findById($id);
         if(!empty($book)){
             $pages = $this->sortByPageNum($book['Part']);
+            $files = $this->File->find('all',array(
+                'conditions'=>array(
+                    'page_id'=>$pages[$page_num]['id']
+                )
+            ));
+            $links = $this->getLinks($files);
             $this->set('book',$book);
             $this->set('page',$pages[$page_num]);
             $this->set('pages',$book['Part']);
             $this->set('show_pages',true);
+            $this->set('pictures',$links);
         }
     }
     public function savePage(){

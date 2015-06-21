@@ -50,29 +50,50 @@ class UsersController extends AppController{
             return $this->redirect(array('controller'=>'users','action'=>'dashboard'));
         }
         else{
-
+            $this->Session->setFlash(
+                __('Неправильно введен адрес электронной почты или пароль, пожалуйста, попробуйте еще раз'),
+                'default',
+                array(),
+                'auth'
+            );
+            $this->redirect('/');
         }
     }
     public function logout(){
         $this->autoRender = false;
         $this->Auth->logout();
+        $this->redirect('/');
     }
     public function dashboard(){
         $this->layout = 'home_logged';
+        $this->loadModel('User');
+        $user = $this->User->find('first',array('conditions'=>array('id'=>$this->Auth->user('id'))));
+        $this->set('user',$user['User']);
     }
     public function mentions(){
         $this->layout = 'home_logged';
+        $this->loadModel('User');
+        $user = $this->User->find('first',array('conditions'=>array('id'=>$this->Auth->user('id'))));
+        $this->set('user',$user['User']);
     }
     public function books(){
         $this->layout = 'home_logged';
         $this->loadModel('Book');
         $this->set('books',$this->Book->find('all',array('conditions'=>array('author_id'=>$this->Auth->user('id')))));
+        $this->loadModel('User');
+        $user = $this->User->find('first',array('conditions'=>array('id'=>$this->Auth->user('id'))));
+        $this->set('user',$user['User']);
     }
     public function bookmarks(){
         $this->layout = 'home_logged';
+        $this->loadModel('User');
+        $user = $this->User->find('first',array('conditions'=>array('id'=>$this->Auth->user('id'))));
+        $this->set('user',$user['User']);
     }
     public function edit(){
         $this->layout = 'home_logged';
-        $this->Auth->user('id');
+        $this->loadModel('User');
+        $user = $this->User->find('first',array('conditions'=>array('id'=>$this->Auth->user('id'))));
+        $this->set('user',$user['User']);
     }
 }

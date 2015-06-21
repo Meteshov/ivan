@@ -37,7 +37,7 @@ class PagesController extends AppController {
  */
     public $components = array();
 
-    public $helpers = array('Html','Form');
+    public $helpers = array('Html','Form','Session');
 	public $uses = array();
 
 /**

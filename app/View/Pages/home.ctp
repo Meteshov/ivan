@@ -15,7 +15,7 @@
 </div>
 <div class="sidebar col-md-2">
     <div class="login-wrap row">
-        <div class="row register" style="display: none">
+        <div class="row register">
             <?php echo $this->Form->create('User',array('action'=>'register'));?>
             <?php
             echo $this->Form->input('User.email',array(
@@ -42,37 +42,50 @@
             ));
             echo $this->Form->button('Вперед',array(
                 'type'=>'submit',
-                'class'=>'btn btn-success'
+                'class'=>'btn btn-info right-float'
             ));
             ?>
-            <a class="btn btn-info login-open right-float" href="#">Отмена</a>
-            <?php echo $this->Form->end();?>
-        </div>
-        <div class="row login">
-            <?php echo $this->Form->create('User',array('action'=>'login'));?>
-            <?php
-            echo $this->Form->input('User.email',array(
-                'type' => 'email',
-                'label' => false,
-                'div'=> array('class'=>'form-group'),
-                'class'=> 'form-control',
-                'placeholder'=>'Email'
-            ));
-            echo $this->Form->input('User.password',array(
-                'type' => 'password',
-                'label' => false,
-                'div'=> array('class'=>'form-group'),
-                'class'=> 'form-control',
-                'placeholder'=>'Пароль'
-            ));
-            echo $this->Form->button('Вперед',array(
-                'type'=>'submit',
-                'class'=>'btn btn-success'
-            ));
-            ?>
-            <a class="btn btn-info register-open right-float" href="#">Регистрация</a>
+            <!--<a class="btn btn-info login-open right-float" href="#">Отмена</a>-->
             <?php echo $this->Form->end();?>
         </div>
     </div>
     <div class="testimonials-wrap row"></div>
+</div>
+<div style="display: none;">
+    <div class="col-lg-12" id="login-form">
+        <h3 class="text-center" style="margin-bottom: 25px">Авторизация</h3>
+        <!--<h3 class="bg-danger"><?php /*echo $this->Session->flash('auth');*/?></h3>-->
+        <!--<div class="col-lg-6">-->
+        <?php echo $this->Form->create('User',array('action'=>'login'));?>
+        <?php
+        echo $this->Form->input('User.email',array(
+            'type' => 'email',
+            'label' => false,
+            'div'=> array('class'=>'form-group'),
+            'class'=> 'form-control',
+            'placeholder'=>'Email'
+        ));
+        echo $this->Form->input('User.password',array(
+            'type' => 'password',
+            'label' => false,
+            'div'=> array('class'=>'form-group'),
+            'class'=> 'form-control',
+            'placeholder'=>'Пароль'
+        ));
+        echo $this->Form->button('Вперед',array(
+            'type'=>'submit',
+            'class'=>'btn btn-info right-float'
+        ));
+        ?>
+        <!--<a class="btn btn-info register-open right-float" href="#">Регистрация</a>-->
+        <?php echo $this->Form->end();?>
+        <!--</div>-->
+    </div>
+</div>
+<div class="" style="display: none">
+    <!--<div class="col-md-12" id="login-error">-->
+        <div class="alert alert-danger no-margin" id="login-error-msg"><!--
+            --><?php echo $this->Session->flash('auth');?><!--
+        --></div>
+    <!--</div>-->
 </div>

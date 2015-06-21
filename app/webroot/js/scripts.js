@@ -30,5 +30,26 @@ $(document).ready(function(){
             singleItem:true
         });
     }
+    if($('a.login-btn').length > 0) {
+        $('a.login-btn').colorbox({
+            href: '#login-form',
+            inline: 'true',/*
+            minWidth : '80%',*/
+            width: '30%'/*,
+            height:'50%'*/
+        });
+    }
+    /*console.log('bef');
+    console.log($('div#login-error-msg').text());
+    console.log('aft');*/
+    if($('div#login-error-msg').text()!= '') {
+        $.colorbox({
+            href: '#login-error-msg',
+            inline: 'true'
+             /*minWidth : '80%',
+            width: '30%',
+             height:'50%'*/
+        }).show();
+    }
 });
 

@@ -1,4 +1,4 @@
-<table class="table table-hover books-list">
+<table class="table table-hover books-list shadow">
         <thead>
         <tr>
             <td>Обложка</td>

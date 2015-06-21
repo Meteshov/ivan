@@ -22,14 +22,25 @@ $(document).ready(function(){
             var fileCount = this.files.length;
         });
     }
+    $('.book-attach-thumb').click(function(){
+        var link = $(this).attr('src');
+        $.colorbox({
+            inline:'true',
+            href:"#img-full",
+            onOpen:function(){
+                $('#img-full').find('img').attr('src',link);
+            }
+        })
+    });
 });
+$(document).on('click','.remove-attach-btn',function(){});
 $(document).on('click','.new-attach',function(e){
     $('#BookFiles').trigger('click');
     return false;
 });
 $(document).on('click','.save-page',function(e){
     e.preventDefault();
-    /*var form = $('#BookSavePageForm');
+    var form = $('#BookSavePageForm');
     form.find('#BookContent').val(tinyMCE.activeEditor.getContent({format : 'raw'}));
-    form.submit();*/
+    form.submit();
 });

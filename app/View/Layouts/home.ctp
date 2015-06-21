@@ -27,9 +27,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     </title>
     <?php
     echo $this->Html->meta('icon');
-    echo $this->Html->css(array('bootstrap.min','owl.carousel','owl.theme'));
+    echo $this->Html->css(array('bootstrap.min','owl.carousel','owl.theme','colorbox'));
     echo $this->Html->css(array('additional'),'stylesheet',array('media'=>'screen'));
-    echo $this->Html->script(array('jquery-1.11.2.min','owl.carousel','scripts'));
+    echo $this->Html->script(array('jquery-1.11.2.min','owl.carousel','jquery.colorbox-min','scripts'));
     echo $this->fetch('meta');
     echo $this->fetch('css');
     echo $this->fetch('script');
@@ -45,7 +45,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         <ul>
                <li><a href="#">Главная</a></li><!--
             --><li class="item-separator"><span class="glyphicon glyphicon-option-vertical"></span></li><!--
-            --><li class="item-large"><a href="#">Личный кабинет</a></li><!--
+            --><li class="item-large"><a href="#" class="login-btn">Личный кабинет</a></li><!--
             --><li class="item-separator"><span class="glyphicon glyphicon-option-vertical"></span></li><!--
             --><li><a href="#">О нас</a></li>
         </ul>
