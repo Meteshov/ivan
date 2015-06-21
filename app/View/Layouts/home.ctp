@@ -50,7 +50,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             --><li><a href="#">О нас</a></li>
         </ul>
         </div>
-        <div class="header-main-right col-md-2 col-lg-2">
+        <div class="header-main-right col-md-2 col-lg-4">
             <form>
                 <div class="form-group">
                         <div class="input-group">
